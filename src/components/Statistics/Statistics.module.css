@@ -1,0 +1,25 @@
+.title {
+  text-transform: uppercase;
+}
+
+.statList {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100px;
+  background-color: #2596be;
+}
+
+.item:nth-child(2n + 0) {
+  background: #abdbe3;
+}
+
+.label {
+  margin-bottom: 15px;
+}

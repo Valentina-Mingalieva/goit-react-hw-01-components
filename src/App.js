@@ -1,6 +1,10 @@
 import './App.css';
+
 import Profile from './components/Profile/Profile';
 import user from './components/Profile/user.json';
+
+import Statistics from './components/Statistics/Statistics';
+import statisticalData from './components/Statistics/statistical-data.json';
 
 function App() {
   return (
@@ -15,6 +19,9 @@ function App() {
       />
 
       <h2>Task 2</h2>
+      <Statistics title={statisticalData.title} stats={statisticalData} />
+
+      <h2>Task 3</h2>
     </div>
   );
 }
