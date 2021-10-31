@@ -6,6 +6,9 @@ import user from './components/Profile/user.json';
 import Statistics from './components/Statistics/Statistics';
 import statisticalData from './components/Statistics/statistical-data.json';
 
+import FriendList from './components/FriendList/FriendList';
+import friends from './components/FriendList/friends.json';
+
 function App() {
   return (
     <div className="App">
@@ -22,6 +25,9 @@ function App() {
       <Statistics title={statisticalData.title} stats={statisticalData} />
 
       <h2>Task 3</h2>
+      <FriendList friends={friends} />
+
+      <h2>Task 4</h2>
     </div>
   );
 }
