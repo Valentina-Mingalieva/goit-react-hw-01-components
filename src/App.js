@@ -9,6 +9,9 @@ import statisticalData from './components/Statistics/statistical-data.json';
 import FriendList from './components/FriendList/FriendList';
 import friends from './components/FriendList/friends.json';
 
+import TransactionHistory from './components/TransactionHistory/Transactions';
+import transactions from './components/TransactionHistory/transactions.json';
+
 function App() {
   return (
     <div className="App">
@@ -20,14 +23,12 @@ function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
-
       <h2>Task 2</h2>
       <Statistics title={statisticalData.title} stats={statisticalData} />
-
       <h2>Task 3</h2>
       <FriendList friends={friends} />
-
       <h2>Task 4</h2>
+      <TransactionHistory items={transactions} />;
     </div>
   );
 }
